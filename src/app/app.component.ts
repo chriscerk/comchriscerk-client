@@ -1,4 +1,6 @@
+import { Observable } from 'rxjs/Observable';
 import { Component } from '@angular/core';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-root',

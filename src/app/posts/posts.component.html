@@ -1,0 +1,10 @@
+<main *ngIf="posts">
+  <h1>Posts</h1>
+  <div *ngFor="let post of posts | async">
+    <h2>{{post.Name}}</h2>
+    {{post.EntryTime}}
+    <p>{{post.Content}}</p>
+  </div>
+
+</main>
+
