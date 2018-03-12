@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "sourceMap": false,
+    "target": "es6"
+  },
+  "files": [
+    "index.ts"
+  ]
+}

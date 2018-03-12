@@ -20,7 +20,7 @@ import { PostsComponent } from './posts/posts.component';
   ],
   imports: [
     HttpClientModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'comchriscerk'}),
     AppRoutingModule,
     CoreModule,
     SharedModule,
