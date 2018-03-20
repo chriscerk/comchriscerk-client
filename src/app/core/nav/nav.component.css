@@ -17,3 +17,21 @@ nav:hover {
     -webkit-transition: background .5s;
     box-shadow: 0 0 15px rgb(111, 111, 111);
 }
+
+
+ul {
+    list-style-type: none;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    text-decoration-color: none;
+    color:white;
+}
+
+li {
+    display: inline;
+    margin-right: 1%;
+}

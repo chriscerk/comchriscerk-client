@@ -24,8 +24,8 @@ import { PostsComponent } from './posts/posts.component';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule.enablePersistence()
+    AngularFirestoreModule.enablePersistence(),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

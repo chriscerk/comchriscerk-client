@@ -9,7 +9,7 @@
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
-  "main": "../server/index.js",
+  "main": "index.js",
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -28,7 +28,8 @@
     "firebase-functions": "^0.8.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19",
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "angular-universal-express-firebase": "0.0.4"
   },
   "devDependencies": {
     "tslint": "^5.8.0",

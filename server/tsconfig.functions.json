@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
-    "lib": ["es6"],
     "module": "commonjs",
-    "noImplicitReturns": true,
-    "outDir": ".",
-    "sourceMap": false,
-    "target": "es6"
+    "rootDir": ".",
+    "outDir": "../functions",
+    "target": "es2015"
   },
   "files": [
     "index.ts"
