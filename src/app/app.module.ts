@@ -1,4 +1,4 @@
-import { firebaseConfig } from './../environments/firebase.config';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,8 @@ import { HttpClientModule} from '@angular/common/http'
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
-
+import { firebaseConfig } from './../environments/firebase.config';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 
@@ -21,6 +22,7 @@ import { PostsComponent } from './posts/posts.component';
   imports: [
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'comchriscerk'}),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     AppRoutingModule,
     CoreModule,
     SharedModule,

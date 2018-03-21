@@ -6,6 +6,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "build-all": "npm run build-client && npm run client-to-functions && npm run build-server",
+    "build-client": "ng build --prod --app client --output-hashing=false",
+    "build-server": "ng build -aot -app ssr",
+    "client-to-functions":  "xcopy .\\dist .\\functions\\dist /e",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,6 +26,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/platform-server": "^5.2.8",
     "@angular/router": "^5.2.0",
+    "@angular/service-worker": "^5.2.9",
     "angularfire2": "^5.0.0-rc.6",
     "core-js": "^2.4.1",
     "firebase": "^4.10.1",

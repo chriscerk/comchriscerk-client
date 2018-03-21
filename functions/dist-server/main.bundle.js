@@ -1,1 +1,637 @@
-!function(n,l){for(var e in l)n[e]=l[e]}(exports,function(n){var l={};function e(t){if(l[t])return l[t].exports;var o=l[t]={i:t,l:!1,exports:{}};return n[t].call(o.exports,o,o.exports,e),o.l=!0,o.exports}return e.m=n,e.c=l,e.d=function(n,l,t){e.o(n,l)||Object.defineProperty(n,l,{configurable:!1,enumerable:!0,get:t})},e.n=function(n){var l=n&&n.__esModule?function(){return n.default}:function(){return n};return e.d(l,"a",l),l},e.o=function(n,l){return Object.prototype.hasOwnProperty.call(n,l)},e.p="",e(e.s=0)}({"+hWK":function(n,l){n.exports=require("angularfire2")},0:function(n,l,e){n.exports=e("Zq8w")},"63Zj":function(n,l,e){"use strict";l.styles=["nav[_ngcontent-%COMP%]{top:0;width:100%;background-color:#fff;color:grey;padding:1%;padding-left:15%;padding-right:15%}nav[_ngcontent-%COMP%], nav[_ngcontent-%COMP%]:hover{z-index:9999999}nav[_ngcontent-%COMP%]:hover{background-color:#3e3d3d;color:#fff;background:#3e3d3d;-webkit-transition:background .5s;-webkit-box-shadow:0 0 15px #6f6f6f;box-shadow:0 0 15px #6f6f6f}"]},"7MAc":function(n,l,e){"use strict";l.styles=[""]},"8wGh":function(n,l){n.exports=require("@angular/animations/browser")},"9nEs":function(n,l,e){"use strict";var t=e("OQ0P"),o=e("FAeD"),u=e("UF2k"),r=e("A7Ap"),i=e("Ez4e"),p=e("t4+y");l.AboutModuleNgFactory=t.\u0275cmf(o.AboutModule,[],function(n){return t.\u0275mod([t.\u0275mpd(512,t.ComponentFactoryResolver,t.\u0275CodegenComponentFactoryResolver,[[8,[u.AboutComponentNgFactory]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t.\u0275mpd(512,r.RouterModule,r.RouterModule,[[2,r.\u0275a],[2,r.Router]]),t.\u0275mpd(512,i.AboutRoutingModule,i.AboutRoutingModule,[]),t.\u0275mpd(512,o.AboutModule,o.AboutModule,[]),t.\u0275mpd(1024,r.ROUTES,function(){return[[{path:"",component:p.AboutComponent}]]},[])])})},A7Ap:function(n,l){n.exports=require("@angular/router")},ASwt:function(n,l){n.exports=require("@angular/platform-server")},DBRd:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),e("XLYC"),l.PostsComponent=function(){function n(n){this.afs=n,this.postsCollection=n.collection("posts"),this.posts=this.postsCollection.valueChanges()}return n.prototype.ngOnInit=function(){},n}()},DWv5:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.NavComponent=function(){function n(){}return n.prototype.ngOnInit=function(){},n}()},Ez4e:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var t=e("t4+y");l.AboutRoutingModule=function(){function n(){}return n.components=[t.AboutComponent],n}()},FAeD:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.AboutModule=function(){}},"Hq/i":function(n,l){n.exports=require("@angular/platform-browser/animations")},Ir0Z:function(n,l){n.exports=require("@angular/common/http")},JwoV:function(n,l,e){"use strict";var t=e("OQ0P"),o=e("bNRb"),u=e("wQAS"),r=e("RpEc"),i=e("gou4"),p=e("Ir0Z"),d=e("yv0u"),a=e("ASwt"),c=e("wp5R"),s=e("8wGh"),m=e("Hq/i"),f=e("A7Ap"),g=e("+hWK"),A=e("XLYC"),C=e("f9NF"),M=e("l0JX"),R=e("DBRd"),y=e("vnfH"),h=e("LpzL"),v=e("T2Au"),N=e("aR8+");l.AppServerModuleNgFactory=t.\u0275cmf(o.AppServerModule,[u.AppComponent],function(n){return t.\u0275mod([t.\u0275mpd(512,t.ComponentFactoryResolver,t.\u0275CodegenComponentFactoryResolver,[[8,[r.PostsComponentNgFactory,i.AppComponentNgFactory]],[3,t.ComponentFactoryResolver],t.NgModuleRef]),t.\u0275mpd(4608,p.HttpXsrfTokenExtractor,p.\u0275h,[d.DOCUMENT,t.PLATFORM_ID,p.\u0275f]),t.\u0275mpd(4608,p.\u0275i,p.\u0275i,[p.HttpXsrfTokenExtractor,p.\u0275g]),t.\u0275mpd(5120,p.HTTP_INTERCEPTORS,function(n){return[n]},[p.\u0275i]),t.\u0275mpd(4608,p.XhrFactory,a.\u0275d,[]),t.\u0275mpd(4608,p.HttpXhrBackend,p.HttpXhrBackend,[p.XhrFactory]),t.\u0275mpd(6144,p.HttpBackend,null,[p.HttpXhrBackend]),t.\u0275mpd(5120,p.HttpHandler,a.\u0275g,[p.HttpBackend,[2,p.HTTP_INTERCEPTORS]]),t.\u0275mpd(4608,p.HttpClient,p.HttpClient,[p.HttpHandler]),t.\u0275mpd(4608,p.\u0275e,p.\u0275e,[]),t.\u0275mpd(5120,t.LOCALE_ID,t.\u0275q,[[3,t.LOCALE_ID]]),t.\u0275mpd(4608,d.NgLocalization,d.NgLocaleLocalization,[t.LOCALE_ID,[2,d.\u0275a]]),t.\u0275mpd(5120,t.IterableDiffers,t.\u0275n,[]),t.\u0275mpd(5120,t.KeyValueDiffers,t.\u0275o,[]),t.\u0275mpd(4608,c.DomSanitizer,c.\u0275e,[d.DOCUMENT]),t.\u0275mpd(6144,t.Sanitizer,null,[c.DomSanitizer]),t.\u0275mpd(4608,c.HAMMER_GESTURE_CONFIG,c.HammerGestureConfig,[]),t.\u0275mpd(5120,c.EVENT_MANAGER_PLUGINS,function(n,l,e,t,o){return[new c.\u0275DomEventsPlugin(n,l),new c.\u0275KeyEventsPlugin(e),new c.\u0275HammerGesturesPlugin(t,o)]},[d.DOCUMENT,t.NgZone,d.DOCUMENT,d.DOCUMENT,c.HAMMER_GESTURE_CONFIG]),t.\u0275mpd(4608,c.EventManager,c.EventManager,[c.EVENT_MANAGER_PLUGINS,t.NgZone]),t.\u0275mpd(135680,c.\u0275DomSharedStylesHost,c.\u0275DomSharedStylesHost,[d.DOCUMENT]),t.\u0275mpd(4608,c.\u0275DomRendererFactory2,c.\u0275DomRendererFactory2,[c.EventManager,c.\u0275DomSharedStylesHost]),t.\u0275mpd(4608,a.\u0275c,a.\u0275c,[c.DOCUMENT,[2,c.\u0275TRANSITION_ID]]),t.\u0275mpd(6144,c.\u0275SharedStylesHost,null,[a.\u0275c]),t.\u0275mpd(4608,a.\u0275ServerRendererFactory2,a.\u0275ServerRendererFactory2,[t.NgZone,c.DOCUMENT,c.\u0275SharedStylesHost]),t.\u0275mpd(4608,s.AnimationDriver,s.\u0275NoopAnimationDriver,[]),t.\u0275mpd(5120,s.\u0275AnimationStyleNormalizer,m.\u0275d,[]),t.\u0275mpd(4608,s.\u0275AnimationEngine,m.\u0275b,[s.AnimationDriver,s.\u0275AnimationStyleNormalizer]),t.\u0275mpd(5120,t.RendererFactory2,a.\u0275a,[a.\u0275ServerRendererFactory2,s.\u0275AnimationEngine,t.NgZone]),t.\u0275mpd(4352,t.Testability,null,[]),t.\u0275mpd(4608,c.Meta,c.Meta,[d.DOCUMENT]),t.\u0275mpd(4608,c.Title,c.Title,[d.DOCUMENT]),t.\u0275mpd(5120,f.ActivatedRoute,f.\u0275f,[f.Router]),t.\u0275mpd(4608,f.PreloadAllModules,f.PreloadAllModules,[]),t.\u0275mpd(6144,f.PreloadingStrategy,null,[f.PreloadAllModules]),t.\u0275mpd(135680,f.RouterPreloader,f.RouterPreloader,[f.Router,t.NgModuleFactoryLoader,t.Compiler,t.Injector,f.PreloadingStrategy]),t.\u0275mpd(4608,f.NoPreloading,f.NoPreloading,[]),t.\u0275mpd(5120,f.ROUTER_INITIALIZER,f.\u0275i,[f.\u0275g]),t.\u0275mpd(5120,t.APP_BOOTSTRAP_LISTENER,function(n){return[n]},[f.ROUTER_INITIALIZER]),t.\u0275mpd(5120,g.FirebaseApp,g.\u0275a,[g.FirebaseAppConfigToken,g.FirebaseAppName]),t.\u0275mpd(4608,A.AngularFirestore,A.AngularFirestore,[g.FirebaseApp,[2,A.\u0275a]]),t.\u0275mpd(4608,C.BrowserXhr,a.\u0275d,[]),t.\u0275mpd(4608,C.ResponseOptions,C.BaseResponseOptions,[]),t.\u0275mpd(4608,C.XSRFStrategy,a.\u0275e,[]),t.\u0275mpd(4608,C.XHRBackend,C.XHRBackend,[C.BrowserXhr,C.ResponseOptions,C.XSRFStrategy]),t.\u0275mpd(4608,C.RequestOptions,C.BaseRequestOptions,[]),t.\u0275mpd(5120,C.Http,a.\u0275f,[C.XHRBackend,C.RequestOptions]),t.\u0275mpd(4608,M.AnimationBuilder,m.\u0275BrowserAnimationBuilder,[t.RendererFactory2,c.DOCUMENT]),t.\u0275mpd(512,p.HttpClientXsrfModule,p.HttpClientXsrfModule,[]),t.\u0275mpd(512,p.HttpClientModule,p.HttpClientModule,[]),t.\u0275mpd(512,d.CommonModule,d.CommonModule,[]),t.\u0275mpd(1024,t.ErrorHandler,c.\u0275a,[]),t.\u0275mpd(1024,t.NgProbeToken,function(){return[f.\u0275b()]},[]),t.\u0275mpd(512,f.\u0275g,f.\u0275g,[t.Injector]),t.\u0275mpd(256,t.APP_ID,"comchriscerk",[]),t.\u0275mpd(2048,c.\u0275TRANSITION_ID,null,[t.APP_ID]),t.\u0275mpd(1024,t.APP_INITIALIZER,function(n,l,e,t,o){return[c.\u0275h(n),f.\u0275h(l),c.\u0275f(e,t,o)]},[[2,t.NgProbeToken],f.\u0275g,c.\u0275TRANSITION_ID,d.DOCUMENT,t.Injector]),t.\u0275mpd(512,t.ApplicationInitStatus,t.ApplicationInitStatus,[[2,t.APP_INITIALIZER]]),t.\u0275mpd(131584,t.ApplicationRef,t.ApplicationRef,[t.NgZone,t.\u0275Console,t.Injector,t.ErrorHandler,t.ComponentFactoryResolver,t.ApplicationInitStatus]),t.\u0275mpd(512,t.ApplicationModule,t.ApplicationModule,[t.ApplicationRef]),t.\u0275mpd(512,c.BrowserModule,c.BrowserModule,[[3,c.BrowserModule]]),t.\u0275mpd(1024,f.\u0275a,f.\u0275d,[[3,f.Router]]),t.\u0275mpd(512,f.UrlSerializer,f.DefaultUrlSerializer,[]),t.\u0275mpd(512,f.ChildrenOutletContexts,f.ChildrenOutletContexts,[]),t.\u0275mpd(256,f.ROUTER_CONFIGURATION,{preloadingStrategy:f.PreloadAllModules},[]),t.\u0275mpd(1024,d.LocationStrategy,f.\u0275c,[d.PlatformLocation,[2,d.APP_BASE_HREF],f.ROUTER_CONFIGURATION]),t.\u0275mpd(512,d.Location,d.Location,[d.LocationStrategy]),t.\u0275mpd(512,t.Compiler,t.Compiler,[]),t.\u0275mpd(512,t.NgModuleFactoryLoader,t.SystemJsNgModuleLoader,[t.Compiler,[2,t.SystemJsNgModuleLoaderConfig]]),t.\u0275mpd(1024,f.ROUTES,function(){return[[{path:"",pathMatch:"full",redirectTo:"/about"},{path:"about",loadChildren:"app/about/about.module#AboutModule"},{path:"posts",component:R.PostsComponent},{path:"**",pathMatch:"full",redirectTo:"/about"}]]},[]),t.\u0275mpd(1024,f.Router,f.\u0275e,[t.ApplicationRef,f.UrlSerializer,f.ChildrenOutletContexts,d.Location,t.Injector,t.NgModuleFactoryLoader,t.Compiler,f.ROUTES,f.ROUTER_CONFIGURATION,[2,f.UrlHandlingStrategy],[2,f.RouteReuseStrategy]]),t.\u0275mpd(512,f.RouterModule,f.RouterModule,[[2,f.\u0275a],[2,f.Router]]),t.\u0275mpd(512,y.AppRoutingModule,y.AppRoutingModule,[]),t.\u0275mpd(512,h.CoreModule,h.CoreModule,[]),t.\u0275mpd(512,v.SharedModule,v.SharedModule,[]),t.\u0275mpd(512,g.AngularFireModule,g.AngularFireModule,[]),t.\u0275mpd(512,A.AngularFirestoreModule,A.AngularFirestoreModule,[]),t.\u0275mpd(512,N.AppModule,N.AppModule,[]),t.\u0275mpd(512,C.HttpModule,C.HttpModule,[]),t.\u0275mpd(512,m.NoopAnimationsModule,m.NoopAnimationsModule,[]),t.\u0275mpd(512,a.ServerModule,a.ServerModule,[]),t.\u0275mpd(512,o.AppServerModule,o.AppServerModule,[]),t.\u0275mpd(256,p.\u0275f,"XSRF-TOKEN",[]),t.\u0275mpd(256,p.\u0275g,"X-XSRF-TOKEN",[]),t.\u0275mpd(256,g.FirebaseAppConfigToken,{apiKey:"AIzaSyDJMsx2sqmxK4ZZPb_xqT8QYLbNkG6WfGk",authDomain:"comchriscerk.firebaseapp.com",databaseURL:"https://comchriscerk.firebaseio.com",projectId:"comchriscerk",storageBucket:"comchriscerk.appspot.com",messagingSenderId:"289351428854"},[]),t.\u0275mpd(256,g.FirebaseAppName,void 0,[]),t.\u0275mpd(256,A.\u0275a,!0,[])])})},LpzL:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.CoreModule=function(){}},OQ0P:function(n,l){n.exports=require("@angular/core")},QK5h:function(n,l,e){"use strict";l.styles=[""]},RpEc:function(n,l,e){"use strict";var t=e("7MAc"),o=e("OQ0P"),u=e("yv0u"),r=e("DBRd"),i=e("XLYC"),p=o.\u0275crt({encapsulation:0,styles:[t.styles],data:{}});function d(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,7,"div",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n    "])),(n()(),o.\u0275eld(2,0,null,null,1,"h2",[],null,null,null,null,null)),(n()(),o.\u0275ted(3,null,["",""])),(n()(),o.\u0275ted(4,null,["\n    ","\n    "])),(n()(),o.\u0275eld(5,0,null,null,1,"p",[],null,null,null,null,null)),(n()(),o.\u0275ted(6,null,["",""])),(n()(),o.\u0275ted(-1,null,["\n  "]))],null,function(n,l){n(l,3,0,l.context.$implicit.Name),n(l,4,0,l.context.$implicit.EntryTime),n(l,6,0,l.context.$implicit.Content)})}function a(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,8,"main",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275eld(2,0,null,null,1,"h1",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Posts"])),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275and(16777216,null,null,2,null,d)),o.\u0275did(6,802816,null,0,u.NgForOf,[o.ViewContainerRef,o.TemplateRef,o.IterableDiffers],{ngForOf:[0,"ngForOf"]},null),o.\u0275pid(131072,u.AsyncPipe,[o.ChangeDetectorRef]),(n()(),o.\u0275ted(-1,null,["\n\n"]))],function(n,l){var e=l.component;n(l,6,0,o.\u0275unv(l,6,0,o.\u0275nov(l,7).transform(e.posts)))},null)}function c(n){return o.\u0275vid(0,[(n()(),o.\u0275and(16777216,null,null,1,null,a)),o.\u0275did(1,16384,null,0,u.NgIf,[o.ViewContainerRef,o.TemplateRef],{ngIf:[0,"ngIf"]},null),(n()(),o.\u0275ted(-1,null,["\n\n"]))],function(n,l){n(l,1,0,l.component.posts)},null)}function s(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,1,"app-posts",[],null,null,null,c,p)),o.\u0275did(1,114688,null,0,r.PostsComponent,[i.AngularFirestore],null,null)],function(n,l){n(l,1,0)},null)}l.RenderType_PostsComponent=p,l.View_PostsComponent_0=c,l.View_PostsComponent_Host_0=s,l.PostsComponentNgFactory=o.\u0275ccf("app-posts",r.PostsComponent,s,{},{},[])},T2Au:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.SharedModule=function(){}},UF2k:function(n,l,e){"use strict";var t=e("WcK0"),o=e("OQ0P"),u=e("t4+y"),r=o.\u0275crt({encapsulation:0,styles:[t.styles],data:{}});function i(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,29,"div",[["itemscope",""],["itemtype","http://schema.org/Person"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275eld(2,0,null,null,6,"header",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n      "])),(n()(),o.\u0275eld(4,0,null,null,0,"img",[["alt","Christopher's Face"],["class","chris-face"],["itemprop","image"],["src","./assets/chriscerk-face-circle.jpg"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n      "])),(n()(),o.\u0275eld(6,0,null,null,1,"h1",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Hi, my name is Chris."])),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275ted(-1,null,["\n\n  "])),(n()(),o.\u0275eld(10,0,null,null,8,"p",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["I built and designed "])),(n()(),o.\u0275eld(12,0,null,null,1,"a",[["href","https://www.google.com/search?q=chris%20cerk%20tiny%20house"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["'tiny house'"])),(n()(),o.\u0275ted(-1,null,[". Currently, I am a software developer at "])),(n()(),o.\u0275eld(15,0,null,null,2,"span",[["itemprop","affiliation"]],null,null,null,null,null)),(n()(),o.\u0275eld(16,0,null,null,1,"a",[["href","https://www.hagerty.com"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Hagerty"])),(n()(),o.\u0275ted(-1,null,["."])),(n()(),o.\u0275ted(-1,null,["\n\n  "])),(n()(),o.\u0275eld(20,0,null,null,1,"span",[["itemprop","givenName"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Christopher"])),(n()(),o.\u0275ted(-1,null,[" "])),(n()(),o.\u0275eld(23,0,null,null,1,"span",[["itemprop","familyName"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Cerk"])),(n()(),o.\u0275ted(-1,null,[" | "])),(n()(),o.\u0275eld(26,0,null,null,2,"li",[],null,null,null,null,null)),(n()(),o.\u0275eld(27,0,null,null,1,"a",[["href","https://github.com/chriscerk"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Github"])),(n()(),o.\u0275ted(-1,null,["\n\n"]))],null,null)}function p(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,1,"app-about",[],null,null,null,i,r)),o.\u0275did(1,114688,null,0,u.AboutComponent,[],null,null)],function(n,l){n(l,1,0)},null)}l.RenderType_AboutComponent=r,l.View_AboutComponent_0=i,l.View_AboutComponent_Host_0=p,l.AboutComponentNgFactory=o.\u0275ccf("app-about",u.AboutComponent,p,{},{},[])},WcK0:function(n,l,e){"use strict";l.styles=["ul[_ngcontent-%COMP%]{list-style-type:none;white-space:nowrap;padding-left:0;word-spacing:5em}p[_ngcontent-%COMP%]{text-align:left;margin-left:auto;margin-right:auto;font-size:125%;line-height:2em;max-width:500px}li[_ngcontent-%COMP%]{display:inline;text-decoration:none;color:#777}.chris-face[_ngcontent-%COMP%]{padding-top:3%;width:100%;max-width:300px;height:auto}a[_ngcontent-%COMP%]{color:#000;text-decoration:none;font-weight:400}.contact[_ngcontent-%COMP%]{display:inline-block}a[_ngcontent-%COMP%]:hover{color:blue}h1[_ngcontent-%COMP%]{font-family:Roboto,Garamond;font:100 3em Roboto}"]},XLYC:function(n,l){n.exports=require("angularfire2/firestore")},Zq8w:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var t=e("JwoV");l.AppServerModuleNgFactory=t.AppServerModuleNgFactory;var o=e("9nEs"),u=e("bNRb");l.AppServerModule=u.AppServerModule,l.LAZY_MODULE_MAP={"app/about/about.module#AboutModule":o.AboutModuleNgFactory}},"aR8+":function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.AppModule=function(){}},bNRb:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.AppServerModule=function(){}},f9NF:function(n,l){n.exports=require("@angular/http")},gCO7:function(n,l,e){"use strict";var t=e("63Zj"),o=e("OQ0P"),u=e("DWv5"),r=o.\u0275crt({encapsulation:0,styles:[t.styles],data:{}});function i(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,16,"nav",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275eld(2,0,null,null,13,"ul",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n    "])),(n()(),o.\u0275eld(4,0,null,null,2,"li",[],null,null,null,null,null)),(n()(),o.\u0275eld(5,0,null,null,1,"a",[["href","/"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Chris Cerk"])),(n()(),o.\u0275ted(-1,null,["\n    "])),(n()(),o.\u0275eld(8,0,null,null,2,"li",[],null,null,null,null,null)),(n()(),o.\u0275eld(9,0,null,null,1,"a",[["href","https://github.com/chriscerk"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Github"])),(n()(),o.\u0275ted(-1,null,["\n    "])),(n()(),o.\u0275eld(12,0,null,null,2,"li",[],null,null,null,null,null)),(n()(),o.\u0275eld(13,0,null,null,1,"a",[["href","/posts"]],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["Blog"])),(n()(),o.\u0275ted(-1,null,["\n    "])),(n()(),o.\u0275ted(-1,null,["\n"])),(n()(),o.\u0275ted(-1,null,["\n"]))],null,null)}function p(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,1,"app-nav",[],null,null,null,i,r)),o.\u0275did(1,114688,null,0,u.NavComponent,[],null,null)],function(n,l){n(l,1,0)},null)}l.RenderType_NavComponent=r,l.View_NavComponent_0=i,l.View_NavComponent_Host_0=p,l.NavComponentNgFactory=o.\u0275ccf("app-nav",u.NavComponent,p,{},{},[])},gou4:function(n,l,e){"use strict";var t=e("QK5h"),o=e("OQ0P"),u=e("gCO7"),r=e("DWv5"),i=e("A7Ap"),p=e("wQAS"),d=o.\u0275crt({encapsulation:0,styles:[t.styles],data:{}});function a(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,1,"app-nav",[],null,null,null,u.View_NavComponent_0,u.RenderType_NavComponent)),o.\u0275did(1,114688,null,0,r.NavComponent,[],null,null),(n()(),o.\u0275ted(-1,null,["\n"])),(n()(),o.\u0275eld(3,0,null,null,4,"main",[],null,null,null,null,null)),(n()(),o.\u0275ted(-1,null,["\n  "])),(n()(),o.\u0275eld(5,16777216,null,null,1,"router-outlet",[],null,null,null,null,null)),o.\u0275did(6,212992,null,0,i.RouterOutlet,[i.ChildrenOutletContexts,o.ViewContainerRef,o.ComponentFactoryResolver,[8,null],o.ChangeDetectorRef],null,null),(n()(),o.\u0275ted(-1,null,["\n"])),(n()(),o.\u0275ted(-1,null,["\n\n\n"]))],function(n,l){n(l,1,0),n(l,6,0)},null)}function c(n){return o.\u0275vid(0,[(n()(),o.\u0275eld(0,0,null,null,1,"app-root",[],null,null,null,a,d)),o.\u0275did(1,49152,null,0,p.AppComponent,[],null,null)],null,null)}l.RenderType_AppComponent=d,l.View_AppComponent_0=a,l.View_AppComponent_Host_0=c,l.AppComponentNgFactory=o.\u0275ccf("app-root",p.AppComponent,c,{},{},[])},l0JX:function(n,l){n.exports=require("@angular/animations")},"t4+y":function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.AboutComponent=function(){function n(){}return n.prototype.ngOnInit=function(){},n}()},vnfH:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),e("DBRd"),l.AppRoutingModule=function(){}},wQAS:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.AppComponent=function(){this.title="app"}},wp5R:function(n,l){n.exports=require("@angular/platform-browser")},yv0u:function(n,l){n.exports=require("@angular/common")}}));
+(function(e, a) { for(var i in a) e[i] = a[i]; }(exports, /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "../../../../../src/app/about/about-routing.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var about_component_1 = __webpack_require__("../../../../../src/app/about/about.component.ts");
+var routes = [
+    { path: '', component: about_component_1.AboutComponent }
+];
+var AboutRoutingModule = /** @class */ (function () {
+    function AboutRoutingModule() {
+    }
+    AboutRoutingModule.components = [about_component_1.AboutComponent];
+    return AboutRoutingModule;
+}());
+exports.AboutRoutingModule = AboutRoutingModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.css.shim.ngstyle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = ["ul[_ngcontent-%COMP%] {\r\n    list-style-type: none;\r\n    white-space: nowrap;\r\n    padding-left: 0;\r\n    word-spacing: 5em;\r\n}\r\n\r\np[_ngcontent-%COMP%] {\r\n    text-align: left;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    font-size: 125%;\r\n    line-height: 2em;\r\n    max-width: 500px;\r\n}\r\n\r\nli[_ngcontent-%COMP%] {\r\n    display: inline;\r\n    text-decoration: none;\r\n    color: #777777;\r\n}\r\n\r\n.chris-face[_ngcontent-%COMP%] {\r\n    padding-top: 3%;\r\n    width: 100%;\r\n    max-width: 300px;\r\n    height: auto;\r\n}\r\n\r\na[_ngcontent-%COMP%] {\r\n    color: black;\r\n    text-decoration: none;\r\n    font-weight: 400;\r\n}\r\n\r\n.contact[_ngcontent-%COMP%] {\r\n    display: inline-block;\r\n}\r\n\r\na[_ngcontent-%COMP%]:hover {\r\n    color: blue;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n    font-family: 'Roboto', Garamond;\r\n    font: 100 3em 'Roboto';\r\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("../../../../../src/app/about/about.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__("@angular/core");
+var i2 = __webpack_require__("../../../../../src/app/about/about.component.ts");
+var styles_AboutComponent = [i0.styles];
+var RenderType_AboutComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AboutComponent, data: {} });
+exports.RenderType_AboutComponent = RenderType_AboutComponent;
+function View_AboutComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 29, "div", [["itemscope", ""], ["itemtype", "http://schema.org/Person"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵeld(2, 0, null, null, 6, "header", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n      "])), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["alt", "Christopher's Face"], ["class", "chris-face"], ["itemprop", "image"], ["src", "./assets/chriscerk-face-circle.jpg"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n      "])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Hi, my name is Chris."])), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵted(-1, null, ["\n\n  "])), (_l()(), i1.ɵeld(10, 0, null, null, 8, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["I built and designed "])), (_l()(), i1.ɵeld(12, 0, null, null, 1, "a", [["href", "https://www.google.com/search?q=chris%20cerk%20tiny%20house"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["'tiny house'"])), (_l()(), i1.ɵted(-1, null, [". Currently, I am a software developer at "])), (_l()(), i1.ɵeld(15, 0, null, null, 2, "span", [["itemprop", "affiliation"]], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 1, "a", [["href", "https://www.hagerty.com"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Hagerty"])), (_l()(), i1.ɵted(-1, null, ["."])), (_l()(), i1.ɵted(-1, null, ["\n\n  "])), (_l()(), i1.ɵeld(20, 0, null, null, 1, "span", [["itemprop", "givenName"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Christopher"])), (_l()(), i1.ɵted(-1, null, [" "])), (_l()(), i1.ɵeld(23, 0, null, null, 1, "span", [["itemprop", "familyName"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Cerk"])), (_l()(), i1.ɵted(-1, null, [" | "])), (_l()(), i1.ɵeld(26, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(27, 0, null, null, 1, "a", [["href", "https://github.com/chriscerk"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Github"])), (_l()(), i1.ɵted(-1, null, ["\n\n"]))], null, null); }
+exports.View_AboutComponent_0 = View_AboutComponent_0;
+function View_AboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-about", [], null, null, null, View_AboutComponent_0, RenderType_AboutComponent)), i1.ɵdid(1, 114688, null, 0, i2.AboutComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_AboutComponent_Host_0 = View_AboutComponent_Host_0;
+var AboutComponentNgFactory = i1.ɵccf("app-about", i2.AboutComponent, View_AboutComponent_Host_0, {}, {}, []);
+exports.AboutComponentNgFactory = AboutComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    return AboutComponent;
+}());
+exports.AboutComponent = AboutComponent;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.module.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("@angular/core");
+var i1 = __webpack_require__("../../../../../src/app/about/about.module.ts");
+var i2 = __webpack_require__("../../../../../src/app/about/about.component.ngfactory.js");
+var i3 = __webpack_require__("@angular/router");
+var i4 = __webpack_require__("../../../../../src/app/about/about-routing.module.ts");
+var i5 = __webpack_require__("../../../../../src/app/about/about.component.ts");
+var AboutModuleNgFactory = i0.ɵcmf(i1.AboutModule, [], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i2.AboutComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(512, i3.RouterModule, i3.RouterModule, [[2, i3.ɵa], [2, i3.Router]]), i0.ɵmpd(512, i4.AboutRoutingModule, i4.AboutRoutingModule, []), i0.ɵmpd(512, i1.AboutModule, i1.AboutModule, []), i0.ɵmpd(1024, i3.ROUTES, function () { return [[{ path: "", component: i5.AboutComponent }]]; }, [])]); });
+exports.AboutModuleNgFactory = AboutModuleNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var AboutModule = /** @class */ (function () {
+    function AboutModule() {
+    }
+    return AboutModule;
+}());
+exports.AboutModule = AboutModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app-routing.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var posts_component_1 = __webpack_require__("../../../../../src/app/posts/posts.component.ts");
+var app_routes = [
+    { path: '', pathMatch: 'full', redirectTo: '/about' },
+    { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
+    { path: 'posts', component: posts_component_1.PostsComponent },
+    { path: '**', pathMatch: 'full', redirectTo: '/about' }
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    return AppRoutingModule;
+}());
+exports.AppRoutingModule = AppRoutingModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.css.shim.ngstyle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [""];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("../../../../../src/app/app.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__("@angular/core");
+var i2 = __webpack_require__("../../../../../src/app/core/nav/nav.component.ngfactory.js");
+var i3 = __webpack_require__("../../../../../src/app/core/nav/nav.component.ts");
+var i4 = __webpack_require__("@angular/router");
+var i5 = __webpack_require__("../../../../../src/app/app.component.ts");
+var styles_AppComponent = [i0.styles];
+var RenderType_AppComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AppComponent, data: {} });
+exports.RenderType_AppComponent = RenderType_AppComponent;
+function View_AppComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-nav", [], null, null, null, i2.View_NavComponent_0, i2.RenderType_NavComponent)), i1.ɵdid(1, 114688, null, 0, i3.NavComponent, [], null, null), (_l()(), i1.ɵted(-1, null, ["\n"])), (_l()(), i1.ɵeld(3, 0, null, null, 4, "main", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵeld(5, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(6, 212992, null, 0, i4.RouterOutlet, [i4.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null), (_l()(), i1.ɵted(-1, null, ["\n"])), (_l()(), i1.ɵted(-1, null, ["\n\n\n"]))], function (_ck, _v) { _ck(_v, 1, 0); _ck(_v, 6, 0); }, null); }
+exports.View_AppComponent_0 = View_AppComponent_0;
+function View_AppComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-root", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), i1.ɵdid(1, 49152, null, 0, i5.AppComponent, [], null, null)], null, null); }
+exports.View_AppComponent_Host_0 = View_AppComponent_Host_0;
+var AppComponentNgFactory = i1.ɵccf("app-root", i5.AppComponent, View_AppComponent_Host_0, {}, {}, []);
+exports.AppComponentNgFactory = AppComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'app';
+    }
+    return AppComponent;
+}());
+exports.AppComponent = AppComponent;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+exports.AppModule = AppModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.server.module.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("@angular/core");
+var i1 = __webpack_require__("../../../../../src/app/app.server.module.ts");
+var i2 = __webpack_require__("../../../../../src/app/app.component.ts");
+var i3 = __webpack_require__("../../../../../src/app/posts/posts.component.ngfactory.js");
+var i4 = __webpack_require__("../../../../../src/app/app.component.ngfactory.js");
+var i5 = __webpack_require__("@angular/common/http");
+var i6 = __webpack_require__("@angular/common");
+var i7 = __webpack_require__("@angular/platform-server");
+var i8 = __webpack_require__("@angular/platform-browser");
+var i9 = __webpack_require__("@angular/animations/browser");
+var i10 = __webpack_require__("@angular/platform-browser/animations");
+var i11 = __webpack_require__("@angular/service-worker");
+var i12 = __webpack_require__("@angular/router");
+var i13 = __webpack_require__("angularfire2");
+var i14 = __webpack_require__("angularfire2/firestore");
+var i15 = __webpack_require__("@angular/http");
+var i16 = __webpack_require__("@angular/animations");
+var i17 = __webpack_require__("../../../../../src/app/posts/posts.component.ts");
+var i18 = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+var i19 = __webpack_require__("../../../../../src/app/core/core.module.ts");
+var i20 = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
+var i21 = __webpack_require__("../../../../../src/app/app.module.ts");
+var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.PostsComponentNgFactory, i4.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(4608, i5.HttpXsrfTokenExtractor, i5.ɵh, [i6.DOCUMENT, i0.PLATFORM_ID, i5.ɵf]), i0.ɵmpd(4608, i5.ɵi, i5.ɵi, [i5.HttpXsrfTokenExtractor, i5.ɵg]), i0.ɵmpd(5120, i5.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i5.ɵi]), i0.ɵmpd(4608, i5.XhrFactory, i7.ɵd, []), i0.ɵmpd(4608, i5.HttpXhrBackend, i5.HttpXhrBackend, [i5.XhrFactory]), i0.ɵmpd(6144, i5.HttpBackend, null, [i5.HttpXhrBackend]), i0.ɵmpd(5120, i5.HttpHandler, i7.ɵg, [i5.HttpBackend, [2, i5.HTTP_INTERCEPTORS]]), i0.ɵmpd(4608, i5.HttpClient, i5.HttpClient, [i5.HttpHandler]), i0.ɵmpd(4608, i5.ɵe, i5.ɵe, []), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵq, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i6.NgLocalization, i6.NgLocaleLocalization, [i0.LOCALE_ID, [2, i6.ɵa]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵn, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵo, []), i0.ɵmpd(4608, i8.DomSanitizer, i8.ɵe, [i6.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i8.DomSanitizer]), i0.ɵmpd(4608, i8.HAMMER_GESTURE_CONFIG, i8.HammerGestureConfig, []), i0.ɵmpd(5120, i8.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new i8.ɵDomEventsPlugin(p0_0, p0_1), new i8.ɵKeyEventsPlugin(p1_0), new i8.ɵHammerGesturesPlugin(p2_0, p2_1)]; }, [i6.DOCUMENT, i0.NgZone, i6.DOCUMENT, i6.DOCUMENT, i8.HAMMER_GESTURE_CONFIG]), i0.ɵmpd(4608, i8.EventManager, i8.EventManager, [i8.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i8.ɵDomSharedStylesHost, i8.ɵDomSharedStylesHost, [i6.DOCUMENT]), i0.ɵmpd(4608, i8.ɵDomRendererFactory2, i8.ɵDomRendererFactory2, [i8.EventManager, i8.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i7.ɵc, i7.ɵc, [i8.DOCUMENT, [2, i8.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i8.ɵSharedStylesHost, null, [i7.ɵc]), i0.ɵmpd(4608, i7.ɵServerRendererFactory2, i7.ɵServerRendererFactory2, [i0.NgZone, i8.DOCUMENT, i8.ɵSharedStylesHost]), i0.ɵmpd(4608, i9.AnimationDriver, i9.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i9.ɵAnimationStyleNormalizer, i10.ɵd, []), i0.ɵmpd(4608, i9.ɵAnimationEngine, i10.ɵb, [i9.AnimationDriver, i9.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i7.ɵa, [i7.ɵServerRendererFactory2, i9.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i8.Meta, i8.Meta, [i6.DOCUMENT]), i0.ɵmpd(4608, i8.Title, i8.Title, [i6.DOCUMENT]), i0.ɵmpd(5120, i11.ɵe, i11.ɵd, [i11.ɵa, i0.PLATFORM_ID]), i0.ɵmpd(4608, i11.SwPush, i11.SwPush, [i11.ɵe]), i0.ɵmpd(4608, i11.SwUpdate, i11.SwUpdate, [i11.ɵe]), i0.ɵmpd(5120, i12.ActivatedRoute, i12.ɵf, [i12.Router]), i0.ɵmpd(4608, i12.PreloadAllModules, i12.PreloadAllModules, []), i0.ɵmpd(6144, i12.PreloadingStrategy, null, [i12.PreloadAllModules]), i0.ɵmpd(135680, i12.RouterPreloader, i12.RouterPreloader, [i12.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i12.PreloadingStrategy]), i0.ɵmpd(4608, i12.NoPreloading, i12.NoPreloading, []), i0.ɵmpd(5120, i12.ROUTER_INITIALIZER, i12.ɵi, [i12.ɵg]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i12.ROUTER_INITIALIZER]), i0.ɵmpd(5120, i13.FirebaseApp, i13.ɵa, [i13.FirebaseAppConfigToken, i13.FirebaseAppName]), i0.ɵmpd(4608, i14.AngularFirestore, i14.AngularFirestore, [i13.FirebaseApp, [2, i14.ɵa]]), i0.ɵmpd(4608, i15.BrowserXhr, i7.ɵd, []), i0.ɵmpd(4608, i15.ResponseOptions, i15.BaseResponseOptions, []), i0.ɵmpd(4608, i15.XSRFStrategy, i7.ɵe, []), i0.ɵmpd(4608, i15.XHRBackend, i15.XHRBackend, [i15.BrowserXhr, i15.ResponseOptions, i15.XSRFStrategy]), i0.ɵmpd(4608, i15.RequestOptions, i15.BaseRequestOptions, []), i0.ɵmpd(5120, i15.Http, i7.ɵf, [i15.XHRBackend, i15.RequestOptions]), i0.ɵmpd(4608, i16.AnimationBuilder, i10.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i8.DOCUMENT]), i0.ɵmpd(512, i5.HttpClientXsrfModule, i5.HttpClientXsrfModule, []), i0.ɵmpd(512, i5.HttpClientModule, i5.HttpClientModule, []), i0.ɵmpd(512, i6.CommonModule, i6.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i8.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i12.ɵb()]; }, []), i0.ɵmpd(512, i12.ɵg, i12.ɵg, [i0.Injector]), i0.ɵmpd(256, i0.APP_ID, "comchriscerk", []), i0.ɵmpd(2048, i8.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(256, i11.ɵb, "/ngsw-worker.js", []), i0.ɵmpd(256, i11.ɵa, { enabled: false }, []), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p2_0, p2_1, p2_2, p3_0, p3_1, p3_2, p3_3) { return [i8.ɵh(p0_0), i12.ɵh(p1_0), i8.ɵf(p2_0, p2_1, p2_2), i11.ɵc(p3_0, p3_1, p3_2, p3_3)]; }, [[2, i0.NgProbeToken], i12.ɵg, i8.ɵTRANSITION_ID, i6.DOCUMENT, i0.Injector, i0.Injector, i11.ɵb, i11.ɵa, i0.PLATFORM_ID]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i8.BrowserModule, i8.BrowserModule, [[3, i8.BrowserModule]]), i0.ɵmpd(512, i11.ServiceWorkerModule, i11.ServiceWorkerModule, []), i0.ɵmpd(1024, i12.ɵa, i12.ɵd, [[3, i12.Router]]), i0.ɵmpd(512, i12.UrlSerializer, i12.DefaultUrlSerializer, []), i0.ɵmpd(512, i12.ChildrenOutletContexts, i12.ChildrenOutletContexts, []), i0.ɵmpd(256, i12.ROUTER_CONFIGURATION, { preloadingStrategy: i12.PreloadAllModules }, []), i0.ɵmpd(1024, i6.LocationStrategy, i12.ɵc, [i6.PlatformLocation, [2, i6.APP_BASE_HREF], i12.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i6.Location, i6.Location, [i6.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]), i0.ɵmpd(1024, i12.ROUTES, function () { return [[{ path: "", pathMatch: "full", redirectTo: "/about" }, { path: "about", loadChildren: "app/about/about.module#AboutModule" }, { path: "posts", component: i17.PostsComponent }, { path: "**", pathMatch: "full", redirectTo: "/about" }]]; }, []), i0.ɵmpd(1024, i12.Router, i12.ɵe, [i0.ApplicationRef, i12.UrlSerializer, i12.ChildrenOutletContexts, i6.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i12.ROUTES, i12.ROUTER_CONFIGURATION, [2, i12.UrlHandlingStrategy], [2, i12.RouteReuseStrategy]]), i0.ɵmpd(512, i12.RouterModule, i12.RouterModule, [[2, i12.ɵa], [2, i12.Router]]), i0.ɵmpd(512, i18.AppRoutingModule, i18.AppRoutingModule, []), i0.ɵmpd(512, i19.CoreModule, i19.CoreModule, []), i0.ɵmpd(512, i20.SharedModule, i20.SharedModule, []), i0.ɵmpd(512, i13.AngularFireModule, i13.AngularFireModule, []), i0.ɵmpd(512, i14.AngularFirestoreModule, i14.AngularFirestoreModule, []), i0.ɵmpd(512, i21.AppModule, i21.AppModule, []), i0.ɵmpd(512, i15.HttpModule, i15.HttpModule, []), i0.ɵmpd(512, i10.NoopAnimationsModule, i10.NoopAnimationsModule, []), i0.ɵmpd(512, i7.ServerModule, i7.ServerModule, []), i0.ɵmpd(512, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i5.ɵf, "XSRF-TOKEN", []), i0.ɵmpd(256, i5.ɵg, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i13.FirebaseAppConfigToken, { apiKey: "AIzaSyDJMsx2sqmxK4ZZPb_xqT8QYLbNkG6WfGk", authDomain: "comchriscerk.firebaseapp.com", databaseURL: "https://comchriscerk.firebaseio.com", projectId: "comchriscerk", storageBucket: "comchriscerk.appspot.com", messagingSenderId: "289351428854" }, []), i0.ɵmpd(256, i13.FirebaseAppName, undefined, []), i0.ɵmpd(256, i14.ɵa, true, [])]); });
+exports.AppServerModuleNgFactory = AppServerModuleNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.server.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var AppServerModule = /** @class */ (function () {
+    function AppServerModule() {
+    }
+    return AppServerModule;
+}());
+exports.AppServerModule = AppServerModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/core/core.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var CoreModule = /** @class */ (function () {
+    function CoreModule() {
+    }
+    return CoreModule;
+}());
+exports.CoreModule = CoreModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/core/nav/nav.component.css.shim.ngstyle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = ["nav[_ngcontent-%COMP%] {\r\n    z-index: 9999999;\r\n    top: 0;\r\n    width: 100%;\r\n    background-color: white;\r\n    color: grey;\r\n    padding: 1%;\r\n    padding-left: 15%;\r\n    padding-right: 15%;\r\n}\r\n\r\nnav[_ngcontent-%COMP%]:hover {\r\n    z-index: 9999999;\r\n    background-color: #3e3d3d;\r\n    color: white;\r\n    background: #3e3d3d;\r\n    -webkit-transition: background .5s;\r\n    -webkit-box-shadow: 0 0 15px rgb(111, 111, 111);\r\n            box-shadow: 0 0 15px rgb(111, 111, 111);\r\n}\r\n\r\nul[_ngcontent-%COMP%] {\r\n    list-style-type: none;\r\n}\r\n\r\na[_ngcontent-%COMP%], a[_ngcontent-%COMP%]:hover, a[_ngcontent-%COMP%]:active, a[_ngcontent-%COMP%]:visited, a[_ngcontent-%COMP%]:focus {\r\n    text-decoration: none;\r\n    -webkit-text-decoration-line: none;\r\n            text-decoration-line: none;\r\n    -webkit-text-decoration-style: none;\r\n            text-decoration-style: none;\r\n    -webkit-text-decoration-color: none;\r\n            text-decoration-color: none;\r\n    color:white;\r\n}\r\n\r\nli[_ngcontent-%COMP%] {\r\n    display: inline;\r\n    margin-right: 1%;\r\n}"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/core/nav/nav.component.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("../../../../../src/app/core/nav/nav.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__("@angular/core");
+var i2 = __webpack_require__("../../../../../src/app/core/nav/nav.component.ts");
+var styles_NavComponent = [i0.styles];
+var RenderType_NavComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_NavComponent, data: {} });
+exports.RenderType_NavComponent = RenderType_NavComponent;
+function View_NavComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 15, "nav", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵeld(2, 0, null, null, 12, "ul", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n    "])), (_l()(), i1.ɵeld(4, 0, null, null, 1, "li", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Chris Cerk"])), (_l()(), i1.ɵted(-1, null, ["\n    "])), (_l()(), i1.ɵeld(7, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 1, "a", [["href", "https://github.com/chriscerk"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Github"])), (_l()(), i1.ɵted(-1, null, ["\n    "])), (_l()(), i1.ɵeld(11, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 1, "a", [["href", "/posts"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Blog"])), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵted(-1, null, ["\n"])), (_l()(), i1.ɵted(-1, null, ["\n"]))], null, null); }
+exports.View_NavComponent_0 = View_NavComponent_0;
+function View_NavComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-nav", [], null, null, null, View_NavComponent_0, RenderType_NavComponent)), i1.ɵdid(1, 114688, null, 0, i2.NavComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_NavComponent_Host_0 = View_NavComponent_Host_0;
+var NavComponentNgFactory = i1.ɵccf("app-nav", i2.NavComponent, View_NavComponent_Host_0, {}, {}, []);
+exports.NavComponentNgFactory = NavComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/core/nav/nav.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var NavComponent = /** @class */ (function () {
+    function NavComponent() {
+    }
+    NavComponent.prototype.ngOnInit = function () {
+    };
+    return NavComponent;
+}());
+exports.NavComponent = NavComponent;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/posts/posts.component.css.shim.ngstyle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [""];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/posts/posts.component.ngfactory.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__("../../../../../src/app/posts/posts.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__("@angular/core");
+var i2 = __webpack_require__("@angular/common");
+var i3 = __webpack_require__("../../../../../src/app/posts/posts.component.ts");
+var i4 = __webpack_require__("angularfire2/firestore");
+var styles_PostsComponent = [i0.styles];
+var RenderType_PostsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_PostsComponent, data: {} });
+exports.RenderType_PostsComponent = RenderType_PostsComponent;
+function View_PostsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n    "])), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(3, null, ["", ""])), (_l()(), i1.ɵted(4, null, ["\n    ", "\n    "])), (_l()(), i1.ɵeld(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(6, null, ["", ""])), (_l()(), i1.ɵted(-1, null, ["\n  "]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.Name; _ck(_v, 3, 0, currVal_0); var currVal_1 = _v.context.$implicit.EntryTime; _ck(_v, 4, 0, currVal_1); var currVal_2 = _v.context.$implicit.Content; _ck(_v, 6, 0, currVal_2); }); }
+function View_PostsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "main", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵeld(2, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Posts"])), (_l()(), i1.ɵted(-1, null, ["\n  "])), (_l()(), i1.ɵand(16777216, null, null, 2, null, View_PostsComponent_2)), i1.ɵdid(6, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), i1.ɵpid(131072, i2.AsyncPipe, [i1.ChangeDetectorRef]), (_l()(), i1.ɵted(-1, null, ["\n\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 6, 0, i1.ɵnov(_v, 7).transform(_co.posts)); _ck(_v, 6, 0, currVal_0); }, null); }
+function View_PostsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_PostsComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵted(-1, null, ["\n\n"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.posts; _ck(_v, 1, 0, currVal_0); }, null); }
+exports.View_PostsComponent_0 = View_PostsComponent_0;
+function View_PostsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-posts", [], null, null, null, View_PostsComponent_0, RenderType_PostsComponent)), i1.ɵdid(1, 114688, null, 0, i3.PostsComponent, [i4.AngularFirestore], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_PostsComponent_Host_0 = View_PostsComponent_Host_0;
+var PostsComponentNgFactory = i1.ɵccf("app-posts", i3.PostsComponent, View_PostsComponent_Host_0, {}, {}, []);
+exports.PostsComponentNgFactory = PostsComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/posts/posts.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var firestore_1 = __webpack_require__("angularfire2/firestore");
+var PostsComponent = /** @class */ (function () {
+    function PostsComponent(afs) {
+        this.afs = afs;
+        this.postsCollection = afs.collection('posts');
+        this.posts = this.postsCollection.valueChanges();
+    }
+    PostsComponent.prototype.ngOnInit = function () {
+    };
+    return PostsComponent;
+}());
+exports.PostsComponent = PostsComponent;
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/shared.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var SharedModule = /** @class */ (function () {
+    function SharedModule() {
+    }
+    return SharedModule;
+}());
+exports.SharedModule = SharedModule;
+
+
+/***/ }),
+
+/***/ "../../../../../src/main.server.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var app_server_module_ngfactory_1 = __webpack_require__("../../../../../src/app/app.server.module.ngfactory.js");
+exports.AppServerModuleNgFactory = app_server_module_ngfactory_1.AppServerModuleNgFactory;
+var __lazy_0__ = __webpack_require__("../../../../../src/app/about/about.module.ngfactory.js");
+var app_server_module_1 = __webpack_require__("../../../../../src/app/app.server.module.ts");
+exports.AppServerModule = app_server_module_1.AppServerModule;
+exports.LAZY_MODULE_MAP = { "app/about/about.module#AboutModule": __lazy_0__.AboutModuleNgFactory };
+
+
+/***/ }),
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("../../../../../src/main.server.ts");
+
+
+/***/ }),
+
+/***/ "@angular/animations":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/animations");
+
+/***/ }),
+
+/***/ "@angular/animations/browser":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/animations/browser");
+
+/***/ }),
+
+/***/ "@angular/common":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/common");
+
+/***/ }),
+
+/***/ "@angular/common/http":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/common/http");
+
+/***/ }),
+
+/***/ "@angular/core":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/core");
+
+/***/ }),
+
+/***/ "@angular/http":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/http");
+
+/***/ }),
+
+/***/ "@angular/platform-browser":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/platform-browser");
+
+/***/ }),
+
+/***/ "@angular/platform-browser/animations":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/platform-browser/animations");
+
+/***/ }),
+
+/***/ "@angular/platform-server":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/platform-server");
+
+/***/ }),
+
+/***/ "@angular/router":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/router");
+
+/***/ }),
+
+/***/ "@angular/service-worker":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/service-worker");
+
+/***/ }),
+
+/***/ "angularfire2":
+/***/ (function(module, exports) {
+
+module.exports = require("angularfire2");
+
+/***/ }),
+
+/***/ "angularfire2/firestore":
+/***/ (function(module, exports) {
+
+module.exports = require("angularfire2/firestore");
+
+/***/ })
+
+/******/ })));
