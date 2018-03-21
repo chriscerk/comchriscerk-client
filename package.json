@@ -1,6 +1,6 @@
 {
   "name": "comchriscerk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "build-all": "npm run build-client && npm run client-to-functions && npm run build-server",
     "build-client": "ng build --prod --app client --output-hashing=false",
     "build-server": "ng build -aot -app ssr",
-    "client-to-functions":  "xcopy .\\dist .\\functions\\dist /e",
+    "client-to-functions": "xcopy .\\dist .\\functions\\dist /e",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
