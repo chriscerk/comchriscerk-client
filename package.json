@@ -10,7 +10,7 @@
     "build-client": "ng build --prod --app client --output-hashing=false",
     "build-server": "ng build -aot -app ssr",
     "client-to-functions": "xcopy .\\dist .\\functions\\dist /e",
-    "re-ignore": "git rm -r --cached . && git add . && git commit -m \"Re-apply .gitignore\" && npm run patch",
+    "re-ignore": "git rm -r --cached . && git add . && git commit -m \"Re-apply .gitignore\" ",
     "patch": "npm version patch && git push origin dev",
     "minor": "npm version minor && git push origin dev",
     "major": "npm version major && git push origin dev",
