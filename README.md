@@ -4,6 +4,10 @@
 
 Run `npm run build-all` to build the client and server functions. The build artifacts will be stored within the `functions/dist/` and `functions/dist-server` directory.
 
+## Deploy
+
+Run `npm run deploy` to remove the index from dist (so functions will serve the site) and deploy to firebase.
+
 ## Versioning
 
 [Semantic Versioning](semver.org/)
