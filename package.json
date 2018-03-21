@@ -1,6 +1,6 @@
 {
   "name": "comchriscerk",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,12 @@
     "build-all": "npm run build-client && npm run client-to-functions && npm run build-server",
     "build-client": "ng build --prod --app client --output-hashing=false",
     "build-server": "ng build -aot -app ssr",
-    "client-to-functions": "xcopy .\\dist .\\functions\\dist /e",
+    "client-to-functions": "xcopy .\\dist .\\functions\\dist /e /y",
+    "re-ignore": "git rm -r --cached . && git add . && git commit -m \"Re-apply .gitignore\" ",
+    "patch": "npm version patch && git push origin dev",
+    "minor": "npm version minor && git push origin dev",
+    "major": "npm version major && git push origin dev",
+    "deploy": "rm dist/index.html && firebase deploy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
