@@ -2,6 +2,13 @@
 
 html {
     margin: 0;
+    background-color: #FBFCFF;
+}
+
+.top-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #186fb3; 
 }
 
 main {

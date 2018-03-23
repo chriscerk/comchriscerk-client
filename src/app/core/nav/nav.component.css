@@ -2,24 +2,35 @@ nav {
     z-index: 9999999;
     top: 0;
     width: 100%;
-    background-color: white;
-    color: grey;
+    background-color: #FBFCFF;
+    color: #274156;
     padding: 1%;
-    padding-left: 15%;
-    padding-right: 15%;
+    height: 50px;
 }
 
 nav:hover {
     z-index: 9999999;
     background-color: #3e3d3d;
     color: white;
-    background: #3e3d3d;
+    background: #274156;
     -webkit-transition: background .5s;
-    box-shadow: 0 0 15px rgb(111, 111, 111);
+    box-shadow: 0 0 0px rgb(111, 111, 111);
 }
 
+.colorScheme {
+    color: #2F4858;
+    color: #F6AE2D;
+    color: #274156;
+    color: #186fb3;
+    color: #605856;
+    color: #FBFCFF;
+    color: #D0CCD0;
+    color: #86BBD8;
+
+}
 
 ul {
+    padding-left: 15%;
     list-style-type: none;
 }
 
@@ -28,10 +39,12 @@ a, a:hover, a:active, a:visited, a:focus {
     text-decoration-line: none;
     text-decoration-style: none;
     text-decoration-color: none;
-    color:white;
+    color: unset;
 }
 
 li {
+    font-family: 'Lato', Century Gothic, sans-serif;
+    font-weight: 500;
     display: inline;
     margin-right: 1%;
 }
