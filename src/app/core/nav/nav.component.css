@@ -11,7 +11,7 @@ nav {
 nav:hover {
     z-index: 9999999;
     background-color: #3e3d3d;
-    color: #F6AE2D;
+    color: white;
     background: #274156;
     -webkit-transition: background .5s;
     box-shadow: 0 0 0px rgb(111, 111, 111);
