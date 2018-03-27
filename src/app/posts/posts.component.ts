@@ -1,7 +1,9 @@
+import { SummaryPipe } from './../shared/pipes/summary.pipe';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
 import { Post } from '../shared/models/post';
+
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',

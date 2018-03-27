@@ -12,12 +12,14 @@ import { firebaseConfig } from './../environments/firebase.config';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
+    PostComponent,
   ],
   imports: [
     HttpClientModule,
