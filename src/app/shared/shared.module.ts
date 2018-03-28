@@ -1,3 +1,4 @@
+import { PrettyURLPipe } from './pipes/pretty-url.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SummaryPipe } from './pipes/summary.pipe';
@@ -6,7 +7,7 @@ import { SummaryPipe } from './pipes/summary.pipe';
   imports: [
     CommonModule
   ],
-  declarations: [SummaryPipe],
-  exports: [SummaryPipe]
+  declarations: [SummaryPipe, PrettyURLPipe],
+  exports: [SummaryPipe, PrettyURLPipe]
 })
 export class SharedModule { }

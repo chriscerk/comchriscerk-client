@@ -1,3 +1,4 @@
+import { PrettyURLPipe } from './shared/pipes/pretty-url.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
@@ -31,7 +32,7 @@ import { PostComponent } from './post/post.component';
     AngularFirestoreModule.enablePersistence(),
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [PrettyURLPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

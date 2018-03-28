@@ -16,7 +16,13 @@ export class PostsComponent implements OnInit {
 
   constructor(private afs: AngularFirestore) {
     this.postsCollection = afs.collection<Post>('posts');
-    this.posts = this.postsCollection.valueChanges();
+    this.posts = this.postsCollection.snapshotChanges().map(actions => {       
+      return actions.map(a => {
+        const data = a.payload.doc.data() as Post;
+        data.Id = a.payload.doc.id;
+        return data;
+      });
+    });
   }
 
   ngOnInit() {

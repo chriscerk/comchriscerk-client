@@ -6,3 +6,7 @@ p {
     font-weight: normal;
     line-height: 30pt;
 }
+
+.post {
+    border-top: 1px solid #D0CCD0;
+}
