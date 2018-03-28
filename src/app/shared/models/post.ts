@@ -1,5 +1,5 @@
 export interface Post {
-    Id: number,
+    Id?: string,
     EntryTime: DateTimeFormat,
     Name: string,
     Content: string

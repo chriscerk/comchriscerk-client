@@ -1,3 +1,6 @@
-<p>
-  post works!
-</p>
+<main *ngIf="post">
+      <h1>{{(post)?.Name}}</h1>
+      {{(post)?.EntryTime}}
+      <p>{{(post)?.Content}}</p>
+</main>
+  

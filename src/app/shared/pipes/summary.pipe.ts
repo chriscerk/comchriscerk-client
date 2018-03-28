@@ -4,7 +4,7 @@ import {Pipe, PipeTransform} from '@angular/core';
     name: 'summary'
 })
 export class SummaryPipe implements PipeTransform {
-    transform(value: string, limit: number) {
-        return value.substr(0, limit) + "...";
+    transform(value: string, limit: number): string {
+        return value.substr(0, limit) + "... [more]";
     }
 }

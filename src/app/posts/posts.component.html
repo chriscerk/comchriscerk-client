@@ -1,10 +1,7 @@
 <main *ngIf="posts">
-  <h1>Posts</h1>
-  <div *ngFor="let post of posts | async">
+  <div *ngFor="let post of posts | async" class="post" [routerLink]="['/posts',post.Name, post.Id]" class="link">
     <h2>{{post.Name}}</h2>
     {{post.EntryTime}}
     <p>{{post.Content | summary:150}}</p>
   </div>
-
 </main>
-
