@@ -2,9 +2,7 @@ nav {
     z-index: 9999999;
     top: 0;
     width: 100%;
-    background-color: #FBFCFF;
     color: #274156;
-    padding: 1%;
     height: 50px;
 }
 
@@ -34,17 +32,15 @@ ul {
     list-style-type: none;
 }
 
-a, a:hover, a:active, a:visited, a:focus {
-    text-decoration: none;
-    text-decoration-line: none;
-    text-decoration-style: none;
-    text-decoration-color: none;
-    color: unset;
+a {
+    line-height: 50px;
 }
 
 li {
-    font-family: 'Lato', Century Gothic, sans-serif;
-    font-weight: 500;
     display: inline;
-    margin-right: 1%;
+    margin-right: 2%;
+}
+
+ul {
+    margin-top: unset;
 }

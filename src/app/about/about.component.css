@@ -5,43 +5,20 @@ ul {
     word-spacing: 5em;
 }
 
-p {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 125%;
-    line-height: 2em;
-    max-width: 500px;
-}
-
 li {
     display: inline;
     text-decoration: none;
     color: #777777;
 }
 
-.chris-face {
-    padding-top: 3%;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-}
-
 .contact {
     display: inline-block;
 }
 
-a:hover {
-    color: blue;
+.landing {
+    margin-top: 10vh;
 }
 
-h1 {
-    font-family: 'Roboto', Garamond;
-    font: 100 3em 'Roboto';
+p {
+    max-width: 400px;
 }

@@ -14,6 +14,7 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
+import { MarkdownModule } from 'angular2-markdown';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PostComponent } from './post/post.component';
     CoreModule,
     SharedModule,
     AngularFirestoreModule.enablePersistence(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    MarkdownModule.forRoot()
   ],
   providers: [PrettyURLPipe],
   bootstrap: [AppComponent]
