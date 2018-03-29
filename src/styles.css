@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-
 html {
     margin: 0;
-    background-color: #FBFCFF;
+    background-color: #f1f1f1;
+    font-family: 'Cardo', serif;
+    font-size: 14px;
 }
 
 .top-bar {
@@ -12,7 +12,6 @@ html {
 }
 
 main {
-    font-family: 'Lato', Century Gothic, sans-serif;
     font-weight: 300;
     text-align: center;
     margin-left: 10%;
@@ -20,6 +19,19 @@ main {
     margin-top: 0%;
     margin-bottom: 3%;
     color: #3a3a3a;
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    text-decoration-color: none;
+    color: unset;
 }
 
 body {
@@ -31,10 +43,10 @@ body {
 }
 
 p {
-    max-width: 700px;
-    margin-right: auto;
+    text-align: left;
     margin-left: auto;
-    font-size: 14pt;
-    font-weight: normal;
-    line-height: 30pt;
+    margin-right: auto;
+    font-size: 115%;
+    line-height: 2em;
+    max-width: 700px;
 }
