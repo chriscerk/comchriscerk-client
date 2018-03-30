@@ -1,3 +1,4 @@
+import { MarkdownModule } from 'angular2-markdown';
 import { PrettyURLPipe } from './shared/pipes/pretty-url.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { SharedModule } from './shared/shared.module';
@@ -30,7 +31,8 @@ import { PostComponent } from './post/post.component';
     CoreModule,
     SharedModule,
     AngularFirestoreModule.enablePersistence(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    MarkdownModule.forRoot()
   ],
   providers: [PrettyURLPipe],
   bootstrap: [AppComponent]

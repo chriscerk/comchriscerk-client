@@ -39,7 +39,7 @@ export class PostComponent implements OnInit {
           meta.addTags([
               { name: 'author',   content: 'Chris Cerk'},
               { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-              { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+              { name: 'description', content: 'My first blog post' }
             ]);
           });
         });
