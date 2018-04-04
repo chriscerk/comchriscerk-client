@@ -7,12 +7,11 @@
     "shell": "npm run build && firebase experimental:functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log",
-    "prepare": "babel ./node_modules/angular2-markdown/**/*.js  --retain-lines -d ./"
+    "logs": "firebase functions:log"
   },
   "main": "index.js",
   "dependencies": {
-    "@angular/animations": "^5.2.9",
+    "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
@@ -36,7 +35,10 @@
     "prismjs": "^1.13.0",
     "rollup-plugin-commonjs": "^9.1.0",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "xmlhttprequest": "^1.8.0",
+    "angulartics2": "^5.3.0",
+    "ng-autosize": "^1.1.0",
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

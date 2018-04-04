@@ -17,8 +17,7 @@
     "deploy": "rm dist/index.html && firebase deploy",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "prepare": "babel ./**/*.js --retain-lines -d ./"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +34,7 @@
     "@angular/service-worker": "^5.2.9",
     "angular-universal-express-firebase": "0.0.4",
     "angularfire2": "^5.0.0-rc.6",
+    "angulartics2": "^5.3.0",
     "babel-runtime": "^6.23.0",
     "core-js": "^2.4.1",
     "express": "4.16.2",
@@ -42,12 +42,13 @@
     "firebase-admin": "^5.10.0",
     "firebase-functions": "^0.8.1",
     "marked": "^0.3.19",
+    "ng-autosize": "^1.1.0",
     "ngx-markdown": "^1.5.2",
     "prismjs": "^1.13.0",
     "rollup-plugin-commonjs": "^9.1.0",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
-    "ng-autosize": "^1.1.0"
+    "xmlhttprequest": "^1.8.0",
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "1.6.8",
