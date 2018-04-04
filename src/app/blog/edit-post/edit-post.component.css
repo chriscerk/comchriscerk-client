@@ -1,0 +1,36 @@
+textarea, markdown {
+    width: 45%;
+    position: absolute;
+}
+
+textarea {
+    left: 20px;
+    font-size: 115%;
+    font-family: unset;
+    top: 75px;
+    min-height: 80vh;
+    border: unset;
+    border-top: 3px solid black;
+}
+
+markdown {
+    right: 20px;
+    top: 50px;
+}
+
+textarea:focus {
+    outline:none;
+    box-shadow:none;
+    border-bottom: 3px solid green;
+}
+
+.save {
+    border: none;
+    position: fixed;
+    color: white;
+    bottom: 50px;
+    right: 50px;
+    padding: 1%;
+    font-family: unset;
+    background-color: steelblue;
+}

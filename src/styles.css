@@ -13,12 +13,22 @@ html {
 
 main {
     font-weight: 300;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0%;
     margin-bottom: 3%;
     color: #3a3a3a;
+}
+
+article {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    max-width: 700px;
+}
+
+.landing {
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, a {
