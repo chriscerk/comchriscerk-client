@@ -21,9 +21,14 @@
       "prefix": "app",
       "serviceWorker": true,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/prismjs/themes/prism-tomorrow.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-csharp.min.js",
+        "../node_modules/mousetrap/mousetrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -46,9 +51,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/prismjs/themes/prism-tomorrow.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-csharp.min.js",
+        "../node_modules/mousetrap/mousetrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
