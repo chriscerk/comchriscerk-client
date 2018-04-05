@@ -19,8 +19,7 @@ export class AuthenticationComponent {
     }
   }
 
-  constructor(private authService: AuthService) {
-  }
+  constructor(private authService: AuthService) {}
 
   login() {
     this.authService.signInWithGoogle();
@@ -29,5 +28,4 @@ export class AuthenticationComponent {
   logout() {
     this.authService.logout();
   }
-
 }
