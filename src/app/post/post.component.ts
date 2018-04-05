@@ -33,7 +33,7 @@ export class PostComponent implements OnInit {
     private router: Router,
     private afs: AngularFirestore,
     private prettyURL: PrettyURLPipe,
-    private authService: AuthService, 
+    private authService: AuthService,
     meta: Meta,
     title: Title
   ) {
@@ -59,8 +59,6 @@ export class PostComponent implements OnInit {
 
       this.isLoggedIn = authService.isLoggedIn();
     });
-
-
   }
 
   ngOnInit() {      

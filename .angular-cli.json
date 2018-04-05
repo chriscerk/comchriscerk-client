@@ -26,7 +26,8 @@
       ],
       "scripts": [
         "../node_modules/prismjs/prism.js",
-        "../node_modules/prismjs/components/prism-csharp.min.js"
+        "../node_modules/prismjs/components/prism-csharp.min.js",
+        "../node_modules/mousetrap/mousetrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -55,7 +56,8 @@
       ],
       "scripts": [
         "../node_modules/prismjs/prism.js",
-        "../node_modules/prismjs/components/prism-csharp.min.js"
+        "../node_modules/prismjs/components/prism-csharp.min.js",
+        "../node_modules/mousetrap/mousetrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
