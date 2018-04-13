@@ -1,5 +1,4 @@
 import { AuthService } from './core/services/auth.service';
-import { BlogModule } from './blog/blog.module';
 import { MarkdownModule } from 'ngx-markdown';
 import { PrettyURLPipe } from './shared/pipes/pretty-url.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -18,15 +17,11 @@ import {HotkeyModule} from 'angular2-hotkeys';
 import { firebaseConfig } from './../environments/firebase.config';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostComponent } from './post/post.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PostsComponent,
-    PostComponent,
+    AppComponent
   ],
   imports: [
     HttpClientModule,
@@ -35,7 +30,6 @@ import { PostComponent } from './post/post.component';
     CoreModule,
     AppRoutingModule,
     SharedModule,
-    BlogModule,
     AngularFirestoreModule.enablePersistence(),
     AngularFireModule.initializeApp(firebaseConfig),
     MarkdownModule.forRoot(),

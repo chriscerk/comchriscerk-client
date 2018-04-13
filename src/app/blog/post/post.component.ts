@@ -1,12 +1,14 @@
-import { AuthService } from './../core/services/auth.service';
-import { Post } from './../shared/models/post';
+import { Post } from './../../shared/models/post';
+import { PrettyURLPipe } from './../../shared/pipes/pretty-url.pipe';
 import { Meta, Title } from "@angular/platform-browser";
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
 import { Component, OnInit } from '@angular/core';
 import { Router, Params, ActivatedRoute, ParamMap } from '@angular/router';
-import { PrettyURLPipe } from '../shared/pipes/pretty-url.pipe';
 import { HostListener } from '@angular/core';
+import { AuthService } from '../../core/services/auth.service';
+
+
 
 @Component({
   selector: 'app-post',
@@ -26,6 +28,7 @@ export class PostComponent implements OnInit {
   private afDoc: AngularFirestoreDocument<Post>;
   post: Post;
   public postId: any;
+  public postName: any;
   public isLoggedIn: boolean;
 
   constructor(
@@ -40,9 +43,10 @@ export class PostComponent implements OnInit {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       
-      let postName = params.get('postName');
-      let postTitle = this.prettyURL.untransform(postName);
-      title.setTitle(postTitle); 
+      this.postName = params.get('postName');
+      let postTitle = this.prettyURL.untransform(this.postName);
+      title.setTitle(postTitle);
+      console.log(this.postName);
     
       this.postId = params.get('postId');
       
@@ -65,6 +69,6 @@ export class PostComponent implements OnInit {
   }
 
   editPost() {
-    this.router.navigateByUrl("/edit-post/" + this.postId);
+    this.router.navigateByUrl("/"  + this.postName + "/" + this.postId + "/edit");
   }
 }

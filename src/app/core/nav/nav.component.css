@@ -3,12 +3,12 @@ nav {
     top: 0;
     width: 100%;
     color: #274156;
+    background: #f1f1f1;
     height: 50px;
 }
 
 nav:hover {
     z-index: 9999999;
-    background-color: #3e3d3d;
     color: white;
     background: #274156;
     -webkit-transition: background .5s;
@@ -43,4 +43,28 @@ li {
 
 ul {
     margin-top: unset;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    nav {
+        z-index: 9999999;
+        position: fixed;
+        top:unset;
+        bottom: 0px;
+        width: 100%;
+        background: #274156;
+        color: white;
+        height: 50px;
+    }
+    li {
+        display: block;
+        margin-right: 0%;
+        width: 33.3%;
+        float: left;
+        text-align: center;
+    }
+    ul {
+        padding-left: 0%;
+        list-style-type: none;
+    }
 }

@@ -1,9 +1,9 @@
+import { Post } from './../../../shared/models/post';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../../shared/models/post';
 
 @Component({
   selector: 'app-edit-post',
@@ -40,3 +40,4 @@ export class EditPostComponent implements OnInit {
     this.afDoc.update(this.post);
   }
 }
+
