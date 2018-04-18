@@ -1,7 +1,5 @@
 import { Post } from './../../shared/models/post';
 import { PrettyURLPipe } from './../../shared/pipes/pretty-url.pipe';
-import { Meta, Title } from "@angular/platform-browser";
-import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
 import { Component, OnInit } from '@angular/core';
 import { Router, Params, ActivatedRoute, ParamMap } from '@angular/router';
@@ -24,9 +22,6 @@ export class PostComponent implements OnInit {
       this.editPost();
     }
   }
-
-  private afDoc: AngularFirestoreDocument<Post>;
-  post: Post;
   public postId: any;
   public postName: any;
   public isLoggedIn: boolean;
@@ -34,33 +29,14 @@ export class PostComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private afs: AngularFirestore,
-    private prettyURL: PrettyURLPipe,
     private authService: AuthService,
-    meta: Meta,
-    title: Title
   ) {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       
       this.postName = params.get('postName');
-      let postTitle = this.prettyURL.untransform(this.postName);
-      title.setTitle(postTitle);
-      console.log(this.postName);
     
       this.postId = params.get('postId');
-      
-      this.afDoc = afs.doc<Post>('posts/' + this.postId);
-      this.afDoc.valueChanges()
-        .subscribe(p => {
-          this.post= p;
-          meta.addTags([
-              { name: 'author',   content: 'Chris Cerk'},
-              { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-              { name: 'description', content: 'My first blog post' }
-            ]);
-        });
-
       this.isLoggedIn = authService.isLoggedIn();
     });
   }

@@ -1,11 +1,5 @@
-<main *ngIf="post">
+<main>
       <p *ngIf="isLoggedIn" [routerLink]="['edit']" class="link">Edit</p>
-      <article>
-      <h1>{{(post)?.Name}}</h1>
-      {{(post)?.EntryTime}}
-      <p>
-            <markdown>{{(post)?.Content}}</markdown>
-      </p>
-      </article>
+      <router-outlet></router-outlet>
 </main>
   

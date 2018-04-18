@@ -1,0 +1,8 @@
+<article *ngIf="post">
+  <h1>{{(post)?.Name}}</h1>
+  {{(post)?.EntryTime}}
+  <p>
+        <markdown>{{(post)?.Content}}</markdown>
+        <markdown># Test</markdown>
+  </p>
+</article>

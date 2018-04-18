@@ -13,26 +13,31 @@ import { Component, OnInit } from '@angular/core';
 export class EditPostComponent implements OnInit {
 
   private afDoc: AngularFirestoreDocument<Post>;
-  public markdown = "# Title";
+  public markdown = "# Your Content";
   post: Post;
 
   constructor(
     private route: ActivatedRoute,
     private afs: AngularFirestore
   ) {
-    this.route.paramMap.subscribe((params: ParamMap) => {    
+    this.route.parent.paramMap.subscribe((params: ParamMap) => {    
       let postId = params.get('postId');
       
       this.afDoc = afs.doc<Post>('posts/' + postId);
       this.afDoc.valueChanges()
         .subscribe(p => {
-          this.post= p;
+          this.post = p;
           this.markdown = this.post.Content;
         });
     });
   }
 
   ngOnInit() {
+    
+  }
+
+  ngAfterInit() {
+    this.markdown = this.post.Content;
   }
 
   save() {
