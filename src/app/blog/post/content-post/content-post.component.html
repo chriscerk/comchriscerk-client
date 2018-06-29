@@ -1,8 +1,7 @@
 <article *ngIf="post">
   <h1>{{(post)?.Name}}</h1>
-  {{(post)?.EntryTime}}
+  {{(post)?.EntryTime | date:'medium'}}
   <p>
         <markdown>{{(post)?.Content}}</markdown>
-        <markdown># Test</markdown>
   </p>
 </article>
