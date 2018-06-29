@@ -15,7 +15,7 @@
     "minor": "npm version minor && git push origin dev",
     "major": "npm version major && git push origin dev",
     "deploy": "rm dist/index.html -f && firebase deploy",
-    "deploy-client": "ng build --prod --app client --output-hashing=true && firebase deploy --only hosting",
+    "deploy-client": "ng build --prod --app client && firebase deploy --only hosting",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

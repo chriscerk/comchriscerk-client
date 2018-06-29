@@ -6,3 +6,8 @@
 article {
     margin-bottom: 50px;
 }
+
+h2 {
+    border-bottom: 3px groove #186fb3;
+    line-height: 2em;
+} 

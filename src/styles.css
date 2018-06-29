@@ -80,7 +80,41 @@ p {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    font-size: 115%;
+    font-size: 120%;
     line-height: 2em;
     max-width: 700px;
+}
+
+img[alt=small] {
+    width: 100px;
+    display: block;
+}
+
+img[alt=diagram] {
+    width: 700px;
+    display: block;
+}
+
+img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+img.chris-face {
+    max-width: unset;
+    display: inline-block;
+}
+
+
+h1 {
+    border-bottom: 3px groove #186fb3;
+    line-height: 2em;
+} 
+
+h2 {
+    width: unset;
+    display: inline-block;
+    border-bottom: 3px solid #fb8200 !important;
+    line-height: 2em !important;
 }

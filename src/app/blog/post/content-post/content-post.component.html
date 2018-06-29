@@ -1,7 +1,5 @@
 <article *ngIf="post">
   <h1>{{(post)?.Name}}</h1>
   {{(post)?.EntryTime | date:'fullDate'}}
-  <p>
-        <markdown>{{(post)?.Content}}</markdown>
-  </p>
+<markdown>{{(post)?.Content}}</markdown>
 </article>
