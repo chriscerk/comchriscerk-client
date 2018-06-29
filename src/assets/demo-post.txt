@@ -1,0 +1,3 @@
+I decided to revamp my personal site to a modern web-app. During my last year in college, Angular and ASP.NET Core had just been released. Back then, Angular Universal with server side rendering in .NET had plenty of problems (SignalR depending on JQuery which depended on the DOM being one of the few I remember).
+
+Time for personal development outside of work is hard after problem solving all day. In order to produce something of value, 

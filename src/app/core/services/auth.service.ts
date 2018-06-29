@@ -24,14 +24,14 @@ export class AuthService {
         );
       }
   signInWithTwitter() {
-      return this._firebaseAuth.auth.signInWithPopup(
-        new firebase.auth.TwitterAuthProvider()
-      )
+      // return this._firebaseAuth.auth.signInWithPopup(
+      //   new firebase.auth.TwitterAuthProvider()
+      // )
     }
   signInWithFacebook() {
-      return this._firebaseAuth.auth.signInWithPopup(
-        new firebase.auth.FacebookAuthProvider()
-      )
+      // return this._firebaseAuth.auth.signInWithPopup(
+      //   new firebase.auth.FacebookAuthProvider()
+      // )
     }
   signInWithGoogle() {
       return this._firebaseAuth.auth.signInWithPopup(

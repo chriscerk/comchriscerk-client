@@ -1,5 +1,5 @@
 import { AuthService } from './../../core/services/auth.service';
-import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-authentication',
@@ -11,11 +11,19 @@ export class AuthenticationComponent {
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) { 
     let key = event.key;
-    if(key == 'i') {
-      this.login();
-    }
-    else if(key == 'o') {
-      this.logout();
+    let target = event.target as HTMLElement;
+
+    if(target.nodeName == 'INPUT' || target.nodeName == 'TEXTAREA')
+      return;
+    
+    switch(key)
+    {
+      case 'i':
+        this.login();
+        break;
+      case 'o':
+        this.logout();
+        break;
     }
   }
 

@@ -1,0 +1,6 @@
+h2 {
+    width: unset;
+    display: inline-block;
+    border-bottom: 3px solid #fb8200 !important;
+    line-height: 2em !important;
+}

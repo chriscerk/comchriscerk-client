@@ -1,9 +1,9 @@
+import { Post } from './../../../shared/models/post';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../../shared/models/post';
 
 @Component({
   selector: 'app-edit-post',
@@ -13,26 +13,31 @@ import { Post } from '../../shared/models/post';
 export class EditPostComponent implements OnInit {
 
   private afDoc: AngularFirestoreDocument<Post>;
-  public markdown = "# Title";
+  public markdown = "# Your Content";
   post: Post;
 
   constructor(
     private route: ActivatedRoute,
     private afs: AngularFirestore
   ) {
-    this.route.paramMap.subscribe((params: ParamMap) => {    
+    this.route.parent.paramMap.subscribe((params: ParamMap) => {    
       let postId = params.get('postId');
       
       this.afDoc = afs.doc<Post>('posts/' + postId);
       this.afDoc.valueChanges()
         .subscribe(p => {
-          this.post= p;
+          this.post = p;
           this.markdown = this.post.Content;
         });
     });
   }
 
   ngOnInit() {
+    
+  }
+
+  ngAfterInit() {
+    this.markdown = this.post.Content;
   }
 
   save() {
@@ -40,3 +45,4 @@ export class EditPostComponent implements OnInit {
     this.afDoc.update(this.post);
   }
 }
+

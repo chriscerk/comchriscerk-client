@@ -22,3 +22,7 @@ li {
 p {
     max-width: 400px;
 }
+
+h1 {
+    border-bottom: unset !important;
+}

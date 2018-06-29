@@ -1,0 +1,13 @@
+
+.post {
+    border-top: 1px solid #D0CCD0;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-bottom: 3px groove #186fb3;
+    line-height: 2em;
+} 

@@ -1137,21 +1137,6 @@ amqplib@^0.5.2:
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
 
-angular-universal-express-firebase@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/angular-universal-express-firebase/-/angular-universal-express-firebase-0.0.4.tgz#eb8cc8901c057707867835a30533eb5b4fffa1ea"
-  dependencies:
-    "@types/express" "^4.0.36"
-    angular-universal-express "^0.0.3"
-    express "^4.15.3"
-
-angular-universal-express@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/angular-universal-express/-/angular-universal-express-0.0.3.tgz#7e3cb43ca6230bb806802fd770977d281ce5d44b"
-  dependencies:
-    "@types/express" "^4.0.36"
-    express "^4.15.3"
-
 angular2-markdown@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/angular2-markdown/-/angular2-markdown-2.2.3.tgz#a4eb0492981431e319603b7416a1b89011123ed0"

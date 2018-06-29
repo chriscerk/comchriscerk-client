@@ -5,6 +5,29 @@ html {
     font-size: 14px;
 }
 
+.loading {
+    z-index: 9999999;
+    display: absolute;
+    top: 0;
+    background: #186fb3;
+    background-image: linear-gradient(155deg, #186fb3 0%, #274156 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.loading-icon {
+    display: block;
+    margin: 0 auto;
+    padding-top: 35vh;
+    text-align: center;
+}
+
+svg {
+    width: 135;
+    height: 140;
+    fill: rgb(255, 255, 255);
+}
+
 .top-bar {
     width: 100%;
     height: 10px;
@@ -50,13 +73,48 @@ body {
 
 .link {
     cursor: pointer;
+    outline:none;
 }
 
 p {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    font-size: 115%;
+    font-size: 120%;
     line-height: 2em;
     max-width: 700px;
+}
+
+img[alt=small] {
+    width: 100px;
+    display: block;
+}
+
+img[alt=diagram] {
+    width: 700px;
+    display: block;
+}
+
+img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+img.chris-face {
+    max-width: unset;
+    display: inline-block;
+}
+
+
+h1 {
+    border-bottom: 3px groove #186fb3;
+    line-height: 2em;
+} 
+
+h2 {
+    width: unset;
+    display: inline-block;
+    border-bottom: 3px solid #fb8200 !important;
+    line-height: 2em !important;
 }
