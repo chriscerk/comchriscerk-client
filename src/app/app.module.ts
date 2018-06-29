@@ -1,3 +1,4 @@
+import { AngularFireAuthModule, AngularFireAuth  } from 'angularfire2/auth';
 import { AuthService } from './core/services/auth.service';
 import { MarkdownModule } from 'ngx-markdown';
 import { PrettyURLPipe } from './shared/pipes/pretty-url.pipe';
@@ -10,10 +11,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http'
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { Angulartics2Module } from 'angulartics2';
-import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import {HotkeyModule} from 'angular2-hotkeys';
-
 import { firebaseConfig } from './../environments/firebase.config';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
@@ -32,8 +30,9 @@ import { AppComponent } from './app.component';
     SharedModule,
     AngularFirestoreModule.enablePersistence(),
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
     MarkdownModule.forRoot(),
-    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
+    //Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
   ],
   providers: [PrettyURLPipe, AuthService],
   bootstrap: [AppComponent]
