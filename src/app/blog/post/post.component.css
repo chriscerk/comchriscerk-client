@@ -1,0 +1,7 @@
+img {
+    max-width: 300px;
+}
+
+img.small {
+    max-width: 100px;
+}
