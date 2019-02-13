@@ -3,3 +3,7 @@ h1 {
     line-height: 2em;
 }
 
+p::first-letter { 
+    font-size: 200%;
+    color: black;
+}
