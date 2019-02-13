@@ -13,8 +13,9 @@ export class AuthenticationComponent {
     let key = event.key;
     let target = event.target as HTMLElement;
 
-    if(target.nodeName == 'INPUT' || target.nodeName == 'TEXTAREA')
+    if(target.nodeName === 'INPUT' || target.nodeName === 'TEXTAREA') {
       return;
+    }
     
     switch(key)
     {
