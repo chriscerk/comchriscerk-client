@@ -1,6 +1,6 @@
 import { Post } from './../../shared/models/post';
 import { PrettyURLPipe } from './../../shared/pipes/pretty-url.pipe';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Router, Params, ActivatedRoute, ParamMap } from '@angular/router';
 import { HostListener } from '@angular/core';

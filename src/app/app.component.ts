@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Component } from '@angular/core';
 import { HttpClient } from 'selenium-webdriver/http';
 

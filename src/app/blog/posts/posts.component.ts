@@ -1,7 +1,7 @@
 import { Post } from './../../shared/models/post';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 
 @Component({
@@ -16,13 +16,13 @@ export class PostsComponent implements OnInit {
 
   constructor(private afs: AngularFirestore) {
     this.postsCollection = afs.collection<Post>('posts');
-    let unorderedPosts = this.postsCollection.snapshotChanges().map(actions => {       
+    let unorderedPosts = this.postsCollection.snapshotChanges().pipe(map(actions => {       
       return actions.map(a => {
         const data = a.payload.doc.data() as Post;
         data.Id = a.payload.doc.id;
         return data;
       });
-    });
+    }));
 
     this.posts = unorderedPosts.pipe(tap(results => {
       results.sort((a: Post, b: Post) => {

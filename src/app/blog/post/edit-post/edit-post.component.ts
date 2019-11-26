@@ -1,5 +1,5 @@
 import { Post } from './../../../shared/models/post';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';

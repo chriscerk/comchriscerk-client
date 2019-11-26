@@ -1,7 +1,8 @@
-import 'rxjs/add/observable/of';
+
+import {of as observableOf,  Observable } from 'rxjs';
+
 import { Injectable } from '@angular/core';
 import { PreloadingStrategy, Route } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class PreloadModulesStrategy implements PreloadingStrategy {
@@ -11,7 +12,7 @@ export class PreloadModulesStrategy implements PreloadingStrategy {
       console.log('Preloaded: ' + route.path);
       return load();
     } else {
-      return Observable.of(null);
+      return observableOf(null);
     }
   }
   
